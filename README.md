@@ -1,5 +1,8 @@
 # Shopee Online Shopping Platform
 
+# Json API
+link: [https://dummyjson.com/products](https://dummyjson.com/)
+
 
 ## Home Page
 path: /
