@@ -10,7 +10,11 @@ function adjustMainMargin() {
 
 function paginateList() {
   var items = document.querySelectorAll('.product-list .item');
+<<<<<<< HEAD
+  var itemsPerPage = getItemsPerPage(); // Call the function to determine items per page
+=======
   var itemsPerPage = getItemsPerPage(); 
+>>>>>>> 225b4c87b2f412b08ba823f8c161923ec71cbc0d
   var numPages = Math.ceil(items.length / itemsPerPage);
 
   var paginationContainer = document.getElementById('pagination');
@@ -49,6 +53,10 @@ function paginateList() {
 
   paginationContainer.appendChild(nextButton);
 
+<<<<<<< HEAD
+  // Show the first page by default
+=======
+>>>>>>> 225b4c87b2f412b08ba823f8c161923ec71cbc0d
   showPage(1, items, itemsPerPage);
 }
 
@@ -106,6 +114,21 @@ function getCurrentPage() {
   return parseInt(activeLink.textContent, 10);
 }
 
+<<<<<<< HEAD
+// Function to determine items per page based on screen size
+function getItemsPerPage() {
+  if (window.innerWidth <= 767) {
+    return 10; // Set items per page to 10 for screen width <= 767px
+  } else {
+    return 5; // Default items per page
+  }
+}
+
+// Recalculate margin if window is resized
+window.onresize = function () {
+  // adjustMainMargin();
+  paginateList(); // Recalculate pagination on window resize
+=======
 function getItemsPerPage() {
   if (window.innerWidth <= 767) {
     return 10;
@@ -117,6 +140,7 @@ function getItemsPerPage() {
 window.onresize = function () {
   // adjustMainMargin();
   paginateList(); 
+>>>>>>> 225b4c87b2f412b08ba823f8c161923ec71cbc0d
 };
 
 //user dropdown

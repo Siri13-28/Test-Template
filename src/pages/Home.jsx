@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link, Navigate, Outlet } from "react-router-dom";
+<<<<<<< HEAD
+import config from "../config/config";
+=======
+>>>>>>> 225b4c87b2f412b08ba823f8c161923ec71cbc0d
 import { paths } from "../routes/path";
 
 const Home = () => {
@@ -43,6 +47,34 @@ const Home = () => {
           "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
         ],
       },
+<<<<<<< HEAD
+    ],
+    total: 2,
+    skip: 0,
+    limit: 2,
+  });
+
+  useEffect(() => {
+    fetch(`${config.baseUrl}products`)
+      .then((response) => response.json())
+      .then((json) => setProductsData(json))
+      .catch((error) => console.error(error));
+  }, []);
+
+  const [categories, setCategories] = useState([
+    "smartphones",
+    "laptops"
+  ]);
+
+  useEffect(() => {
+    fetch(`${config.baseUrl}products/categories`)
+      .then((response) => response.json())
+      .then((json) => setCategories(json))
+      .catch((error) => console.error(error));
+  }, []);
+
+  const [currentCategory, setCurrentCategory] = useState("");
+=======
       {
         id: 3,
         title: "Samsung Universe 9",
@@ -511,6 +543,7 @@ const Home = () => {
     "lighting",
   ]);
 
+>>>>>>> 225b4c87b2f412b08ba823f8c161923ec71cbc0d
   const [loading, setLoading] = useState(true);
   const [keywords, setKeywords] = useState("");
 
@@ -530,7 +563,12 @@ const Home = () => {
   };
 
   const filterProduct = (category) => {
+<<<<<<< HEAD
+    setCurrentCategory(category);
+    console.log("category");
+=======
     console.log("filterProduct");
+>>>>>>> 225b4c87b2f412b08ba823f8c161923ec71cbc0d
     console.log(category);
 
     const newProductData = productsData.products.filter(
@@ -553,7 +591,11 @@ const Home = () => {
       <header className="header">
         <div className="inner">
           <h1 className="header-logo">
+<<<<<<< HEAD
+            <a href="/">
+=======
             <a href="index.html">
+>>>>>>> 225b4c87b2f412b08ba823f8c161923ec71cbc0d
               <i className="fa-solid fa-store"></i>
               <span>Shop</span>
             </a>

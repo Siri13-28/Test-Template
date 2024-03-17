@@ -36,7 +36,11 @@ const Header = () => {
     <header className="header">
       <div className="inner">
         <h1 className="header-logo">
+<<<<<<< HEAD
+          <a href="/">
+=======
           <a href="index.html">
+>>>>>>> 225b4c87b2f412b08ba823f8c161923ec71cbc0d
             <i className="fa-solid fa-store"></i>
             <span>Shop</span>
           </a>
