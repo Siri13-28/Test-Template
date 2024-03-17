@@ -1,0 +1,137 @@
+.sp-center {
+    margin: 0 auto;
+    background-color: #f6f6f6;
+  }
+  
+  .login-blk {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-blk .login-logo {
+    font-size: 40px;
+    font-weight: 700;
+    max-width: 300px;
+  }
+  
+  .login-blk .login-logo i {
+    margin-right: 10px;
+    color: #6f9a37;
+  }
+  
+  .login-container {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    max-width: 400px;
+    border-radius: 8px;
+  }
+  
+  #login-form {
+    text-align: center;
+  }
+  
+  .login-blk .login-ttl {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 32px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #6f9a37;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #6f9a37;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 767px) {
+    .sp-center {
+      position: relative;
+      height: 100vh;
+    }
+  
+    .login-blk {
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      left: 0;
+      height: 50vh;
+      margin: 0 auto;
+      padding: 0;
+      transform: translateY(-50%);
+    }
+  
+    .login-blk .login-logo {
+      margin: 0 auto 6.25vw;
+      font-size: 6.25vw;
+      max-width: 31.25vw;
+    }
+  
+    .login-blk .login-logo i {
+      margin-right: 1.563vw;
+      color: #6f9a37;
+    }
+  
+    .login-container {
+      margin: 0 auto;
+      padding: 3.125vw;
+      box-shadow: 0 0.625vw 1.25vw rgba(0, 0, 0, 0.1);
+      max-width: 62.5vw;
+      border-radius: 1.25vw;
+    }
+  
+    .login-blk .login-ttl {
+      margin-bottom: 3.125vw;
+      font-size: 5vw;
+    }
+  
+    .input-group {
+      margin-bottom: 3.125vw;
+    }
+  
+    .input-group label {
+      margin-bottom: 0.781vw;
+    }
+  
+    .input-group input {
+      padding: 1.563vw;
+      border: 0.156vw solid #ccc;
+      border-radius: 0.625vw;
+    }
+  
+    button[type="submit"] {
+      padding: 1.563vw;
+      transition: background-color 0.3s ease;
+      border-radius: 0.625vw;
+    }
+  }
